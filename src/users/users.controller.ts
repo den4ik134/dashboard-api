@@ -2,6 +2,7 @@ import { IControllerRoute } from './../common/route.interface';
 import { LoggerService } from './../logger/logger.service';
 import { BaseController } from "../common/base.controller";
 import { Response, Request, NextFunction } from 'express';
+import { HTTPError } from '../errors/http-error.class';
 
 
 export class UserController extends BaseController {
@@ -22,7 +23,8 @@ export class UserController extends BaseController {
     }
 
     login(req: Request, res: Response, next: NextFunction) {
-        this.ok(res, 'login');
+        next(new HTTPError(401, 'Auth Error', 'login'));
+        // this.ok(res, 'login');
     }
 
     register(req: Request, res: Response, next: NextFunction) {
