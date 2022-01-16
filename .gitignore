@@ -1,6 +1,9 @@
 /dist
 /node_modules
 /src/test.ts
-.vscode
-.idea
+/.vscode
+/.idea
 /.clinic
+/.env
+/prisma/dev.db
+/prisma/dev.db-journal
