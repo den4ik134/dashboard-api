@@ -7,7 +7,6 @@ import { TYPES } from './types';
 import { json } from 'body-parser';
 import 'reflect-metadata';
 import { IConfigService } from './config/config.service.interface';
-import { IUserController } from './users/users.controller.interface';
 import { UserController } from './users/users.controller';
 import { PrismaService } from './database/prisma.service';
 
