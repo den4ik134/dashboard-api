@@ -12,7 +12,7 @@
     "lint:fix": "eslint ./src/** --fix",
     "build": "tsc",
     "generate": "prisma generate",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Denys Bilyk",
   "license": "ISC",
